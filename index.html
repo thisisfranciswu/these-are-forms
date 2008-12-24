@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>These Are Forms</title>
+  <link href="stylesheets/these_are_forms.css" rel="stylesheet" type="text/css" media="screen"></link>
+</head>
+
+<body>
+
+<h1>These Are Forms</h1>
+
+<form>
+
+  <p class="description">This is a description.</p>
+
+  <div class="error">
+    <label>Single Line Text<span class="req">*</span></label>
+    <span class="full">
+      <input class="text"></input>
+      <label>Field Label</label>
+    </span>
+  </div>
+
+  <div>
+    <label>Paragraph Text</label>
+    <span class="full">
+      <textarea></textarea>
+      <label>Field Label</label>
+    </span>
+  </div>
+
+  <div class="half_left">
+    <div class="half_container">
+      <label>Multiple Choice</label>
+      <ul class="check_radio">
+        <li><input type="radio"></input><label>First Choice</label></li>
+        <li><input type="radio"></input><label>Second Choice</label></li>
+        <li><input type="radio"></input><label>Third Choice</label></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="half_right">
+    <div class="half_container">
+      <label>Checkboxes</label>
+      <ul class="check_radio">
+        <li><input type="checkbox"></input><label>First Choice</label></li>
+        <li><input type="checkbox"></input><label>Second Choice</label></li>
+        <li><input type="checkbox"></input><label>Third Choice</label></li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <label>Multiple Choice (Inline)</label>
+    <ul class="check_radio inline">
+      <li><input type="radio"></input><label>First Choice</label></li>
+      <li><input type="radio"></input><label>Second Choice</label></li>
+      <li><input type="radio"></input><label>Third Choice</label></li>
+    </ul>
+  </div>
+
+  <div>
+    <label>Checkboxes (Inline)</label>
+    <ul class="check_radio inline">
+      <li><input type="checkbox"></input><label>First Choice</label></li>
+      <li><input type="checkbox"></input><label>Second Choice</label></li>
+      <li><input type="checkbox"></input><label>Third Choice</label></li>
+    </ul>
+  </div>
+
+  <div>
+    <label>Drop Down</label>
+    <span class="full">
+      <select>
+        <option>First Choice</option>
+        <option>Second Choice</option>
+        <option>Third Choice</option>
+      </select>
+      <label>Field Label</label>
+    </span>
+  </div>
+
+  <div>
+    <label>Name</label>
+    <span>
+      <input class="text"></input>
+      <label>First</label>
+    </span>
+    <span>
+      <input class="text"></input>
+      <label>Last</label>
+    </span>
+  </div>
+
+  <div>
+    <label>Price</label>
+    <span>$</span>
+    <span>
+      <input class="text"></input> .
+      <label>Dollars</label>
+    </span>
+    <span>
+      <input size="2" class="text"></input>
+      <label>Cents</label>
+    </span>
+  </div>
+
+  <div>
+    <label>Time</label>
+    <span>
+      <input size="2" class="text"></input> :
+      <label>HH</label>
+    </span>
+    <span>
+      <input size="2" class="text"></input> :
+      <label>MM</label>
+    </span>
+    <span>
+      <input size="2" class="text"></input>
+      <label>SS</label>
+    </span>
+    <span>
+      <select>
+        <option>AM</option>
+        <option>PM</option>
+      </select>
+      <label>AM/PM</label>
+    </span>
+  </div>
+
+  <div class="half_left">
+    <div class="half_container">
+      <label>Half Left<span class="req">*</span></label>
+      <span class="full">
+        <input class="text"></input>
+        <label>Field Label</label>
+      </span>
+    </div>
+  </div>
+
+  <div class="half_right">
+    <div class="half_container">
+      <label>Half Right<span class="req">*</span></label>
+      <span class="full">
+        <input class="text"></input>
+        <label>Field Label</label>
+      </span>
+    </div>
+  </div>
+
+  <div>
+    <label>Address</label>
+    <span class="full">
+      <input class="text"></input>
+      <label>Street Address</label>
+    </span>
+    <span class="full">
+      <input class="text"></input>
+      <label>Address Line 2</label>
+    </span>
+    <span class="half_left">
+      <div class="half_container">
+        <input class="text full"></input>
+        <label>City</label>
+      </div>
+    </span>
+    <span class="half_right">
+      <div class="half_container">
+        <input class="text full"></input>
+        <label>State / Province / Region</label>
+      </div>
+    </span>
+    <span class="half_left">
+      <div class="half_container">
+        <input class="text full"></input>
+        <label>Zip / Postal Code</label>
+      </div>
+    </span>
+    <span class="half_right">
+      <div class="half_container">
+        <select class="full">
+          <option></option>
+        </select>
+        <label>Country</label>
+      </div>
+    </span>
+  </div>
+
+  <div>
+    <label>Date</label>
+    <span>
+      <input size="2" class="text"></input> /
+      <label>MM</label>
+    </span>
+    <span>
+      <input size="2" class="text"></input> /
+      <label>DD</label>
+    </span>
+    <span>
+      <input size="4" class="text"></input>
+      <label>YYYY</label>
+    </span>
+    <span>
+      <a href="">Select</a>
+    </span>
+  </div>
+
+  <div>
+    <label>Phone Number</label>
+    <span>
+      <input size="5" class="text"></input> -
+      <label>(###)</label>
+    </span>
+    <span>
+      <input size="3" class="text"></input> -
+      <label>###</label>
+    </span>
+    <span>
+      <input size="4" class="text"></input>
+      <label>####</label>
+    </span>
+  </div>
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
+</form>
+
+</body>
+</html>
