@@ -1,5 +1,6 @@
 form { width: 500px; }
-form * { font-family: sans-serif; line-height: 1.62; font-size: 12px; }
+form * { font-size: 100%; font-family: sans-serif; line-height: 1.62; font-size: 12px; }
+form p.description { margin-left: 1em; margin-right: 1em; }
 
 /* Optional Font Sizes */
 form.large * { font-size: 18px; }
@@ -23,7 +24,7 @@ form span.half_left div.half_container { padding: 0 1em 0.5em 0;  }
 form span.half_right div.half_container { padding: 0 0 0.5em 1em; }
 
 /* Inline Field Containers */
-form span { float: left; margin: 0 0.4em 0.5em 0; display: block; }
+form span { float: left; margin: 0 0 0.5em 0; padding: 0 0.4em 0 0; display: block; }
 form span.full { width: 100%; margin: 0 0 0.5em; }
 
 /* Labels and Fields */
@@ -34,9 +35,9 @@ form span.full input.text,
 form span.full textarea,
 form span.full select { width: 100%; margin: 0; }
 form input.text { padding: 0.3em 0; }
-form select { padding: 0.1em 0; margin: 0 0 0.1em; }
+form select { margin: 0 0 0.1em; padding: 0.1em 0; }
 form input.text,
-form textarea { border-width: 1px; border-style: solid; border-color: #727272 #B4B4B4 #DADADA #B4B4B4; }
+form textarea { border-width: 1px; border-style: solid; border-color: #727272 #B4B4B4 #DADADA #B4B4B4; line-height: normal; }
 form input.full,
 form select.full { width: 100%; }
 form input.large,
