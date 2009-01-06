@@ -34,10 +34,10 @@ form span label { font-size: 84%; color: #404040; font-weight: normal; margin: 0
 form span.full input.text,
 form span.full textarea,
 form span.full select { width: 100%; margin: 0; }
-form input.text { padding: 0.3em 0; }
-form select { margin: 0 0 0.1em; padding: 0.1em 0; }
 form input.text,
-form textarea { border-width: 1px; border-style: solid; border-color: #727272 #B4B4B4 #DADADA #B4B4B4; line-height: normal; }
+form textarea,
+form select { background: #FFFFFF; border-width: 1px; border-style: solid; padding: 0.2em 0; border-color: #727272 #B4B4B4 #DADADA #B4B4B4; }
+form select { padding: 0.1em 0; }
 form input.full,
 form select.full { width: 100%; }
 form input.large,
@@ -51,3 +51,8 @@ form ul.check_radio li { list-style: none; margin: 0; padding: 0; white-space: n
 form ul.check_radio.inline li { display: inline; margin: 0 1em 0 0; }
 form ul.check_radio label { display: inline; font-weight: normal; }
 form ul.check_radio input { margin: 0 0.3em 0 0; vertical-align: baseline; }
+
+/* Safari Hack */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  form select { height: 2.1em; margin: 0.2em 0 0; }
+}
