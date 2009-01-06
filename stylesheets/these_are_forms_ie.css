@@ -1,2 +1,4 @@
 /* Labels and Fields */
-form select { margin: 0.1em 0 0.1em 0; }
+form select { margin: 1px 0; }
+form.large select { margin: 2px 0 0; }
+form.xlarge select { margin: 5px 0 -4px; }

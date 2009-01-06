@@ -2,12 +2,6 @@ form { width: 500px; }
 form * { font-size: 100%; font-family: sans-serif; font-size: 12px; }
 form p.description { margin-left: 1em; margin-right: 1em; }
 
-/* Optional Font Sizes */
-form.large * { font-size: 18px; }
-form.xlarge * { font-size: 24px; }
-form.large span label,
-form.xlarge span label { font-size: 85%; }
-
 /* Field Containers */
 form div { clear: both; padding: 1em 1em 0.5em 1em; overflow: hidden; margin: 0; }
 form div:hover,
@@ -23,21 +17,30 @@ form div.half_container { padding: 0 1em; overflow: visible; }
 form span.half_left div.half_container { padding: 0 1em 0.5em 0;  }
 form span.half_right div.half_container { padding: 0 0 0.5em 1em; }
 
-/* Inline Field Containers */
-form span { float: left; margin: 0; padding: 0 0.4em 0.5em 0; display: block; }
-form span.full { width: 100%; margin: 0; padding: 0 0 0.5em; }
-
-/* Labels and Fields */
+/* Labels and Inlining */
 form label { line-height: 1; font-weight: bold; display: block; color: #000000; margin: 0 0 0.5em; white-space: nowrap; }
 form label span.req { color: #C00000; float: none; margin: 0 0 0 0.5em; line-height: 1; display: inline; padding: 0; }
 form span label { font-size: 84%; color: #404040; font-weight: normal; margin: 0.3em 0 0 0; }
+form span { float: left; margin: 0; padding: 0 0.4em 0.5em 0; display: block; }
+form span.full { width: 100%; margin: 0; padding: 0 0 0.5em; }
+
+/* Fields */
+form input.text,
+form textarea,
+form select { background: #FFFFFF; border-width: 1px; border-style: solid; border-color: #727272 #B4B4B4 #DADADA #B4B4B4; }
+form input.text { height: 16px; padding: 2px 0 0; overflow: hidden; }
+form textarea { padding: 2px 0; }
+form select { height: 20px; padding: 2px 0; }
+form ul.check_radio { margin: 0; padding: 0; }
+form ul.check_radio li { list-style: none; margin: 0; padding: 0; white-space: nowrap; }
+form ul.check_radio.inline li { display: inline; margin: 0 1em 0 0; }
+form ul.check_radio label { display: inline; font-weight: normal; }
+form ul.check_radio input { margin: 0 0.3em 0 0; vertical-align: baseline; }
+
+/* Field Widths */
 form span.full input.text,
 form span.full textarea,
 form span.full select { width: 100%; margin: 0; }
-form input.text,
-form textarea,
-form select { background: #FFFFFF; border-width: 1px; border-style: solid; padding: 0.2em 0; border-color: #727272 #B4B4B4 #DADADA #B4B4B4; }
-form select { padding: 0.15em 0 0.1em; height: 1.6em; }
 form input.full,
 form select.full { width: 100%; }
 form input.large,
@@ -46,13 +49,18 @@ form input.medium,
 form select.medium, { width: 50%; }
 form input.small,
 form select.small { width: 25%; }
-form ul.check_radio { margin: 0; padding: 0; }
-form ul.check_radio li { list-style: none; margin: 0; padding: 0; white-space: nowrap; }
-form ul.check_radio.inline li { display: inline; margin: 0 1em 0 0; }
-form ul.check_radio label { display: inline; font-weight: normal; }
-form ul.check_radio input { margin: 0 0.3em 0 0; vertical-align: baseline; }
 
-/* Safari Hack */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  form select { height: 1.7em; margin: 0.2em 0 0.2em; }
-}
+/* Optional Field Sizes */
+form.large { width: 650px; }
+form.large * { font-size: 18px; }
+form.large input.text { height: 22px; padding: 4px 0 0; }
+form.large textarea { padding: 3px 0 0; }
+form.large select { height: 28px; padding: 4px 0; }
+form.xlarge { width: 800px; }
+form.xlarge * { font-size: 24px; }
+form.xlarge input.text { height: 30px; padding: 6px 0 0; }
+form.xlarge textarea { padding: 4px 0 0; }
+form.xlarge select { height: 38px; padding: 6px 0; }
+form.large span label,
+form.xlarge span label { font-size: 85%; }
+
