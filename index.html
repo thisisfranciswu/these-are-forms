@@ -8,17 +8,38 @@
   <!--[if IE]>
     <link href="stylesheets/these_are_forms_ie.css" rel="stylesheet" type="text/css" media="screen"></link>
   <![endif]-->
+  <script type="text/javascript" src="javascript/prototype.js"></script>
+  <script>
+    function set_font_size(font_size) {
+      $$('form').invoke('removeClassName', 'large');
+      $$('form').invoke('removeClassName', 'xlarge');
+      $$('form').invoke('addClassName', font_size);
+    }
+    function show_error_fields() {
+      $$('div.field').invoke('addClassName', 'error');
+      $$('div.fields').invoke('addClassName', 'error');
+    }
+    function hide_error_fields() {
+      $$('div.field').invoke('removeClassName', 'error');
+      $$('div.fields').invoke('removeClassName', 'error');
+    }
+  </script>
 </head>
 
 <body>
 
 <h1>These Are Forms</h1>
 
-<form class="large">
+<p>
+  Font Size: <a href="#" onclick="set_font_size('');">Regular</a> | <a href="#" onclick="set_font_size('large');">Large</a> | <a href="#" onclick="set_font_size('xlarge');">Extra Large</a><br/>
+  Error Fields: <a href="#" onclick="show_error_fields();">On</a> | <a href="#" onclick="hide_error_fields();">Off</a>
+</p>
+
+<form>
 
   <p class="description">This is a description.</p>
 
-  <div class="error">
+  <div class="field">
     <label>Single Line Text<span class="req">*</span></label>
     <span class="full">
       <input class="text"></input>
@@ -26,7 +47,7 @@
     </span>
   </div>
 
-  <div>
+  <div class="field">
     <label>Paragraph Text</label>
     <span class="full">
       <textarea></textarea>
@@ -34,7 +55,7 @@
     </span>
   </div>
 
-  <div class="half_left">
+  <div class="field half_left">
     <div class="half_container">
       <label>Multiple Choice</label>
       <ul class="check_radio">
@@ -45,7 +66,7 @@
     </div>
   </div>
 
-  <div class="half_right">
+  <div class="field half_right">
     <div class="half_container">
       <label>Checkboxes</label>
       <ul class="check_radio">
@@ -56,7 +77,7 @@
     </div>
   </div>
 
-  <div>
+  <div class="field">
     <label>Multiple Choice (Inline)</label>
     <ul class="check_radio inline">
       <li><input type="radio"></input><label>First Choice</label></li>
@@ -65,7 +86,7 @@
     </ul>
   </div>
 
-  <div>
+  <div class="field">
     <label>Checkboxes (Inline)</label>
     <ul class="check_radio inline">
       <li><input type="checkbox"></input><label>First Choice</label></li>
@@ -74,7 +95,7 @@
     </ul>
   </div>
 
-  <div>
+  <div class="field">
     <label>Drop Down</label>
     <span class="full">
       <select>
@@ -86,7 +107,7 @@
     </span>
   </div>
 
-  <div>
+  <div class="fields">
     <label>Name</label>
     <span>
       <input class="text"></input>
@@ -98,7 +119,7 @@
     </span>
   </div>
 
-  <div>
+  <div class="fields">
     <label>Price</label>
     <span>
       $
@@ -111,7 +132,7 @@
     </span>
   </div>
 
-  <div>
+  <div class="fields">
     <label>Time</label>
     <span>
       <input size="2" class="text"></input> :
@@ -134,7 +155,7 @@
     </span>
   </div>
 
-  <div class="half_left">
+  <div class="field half_left">
     <div class="half_container">
       <label>Half Left<span class="req">*</span></label>
       <span class="full">
@@ -144,7 +165,7 @@
     </div>
   </div>
 
-  <div class="half_right">
+  <div class="field half_right">
     <div class="half_container">
       <label>Half Right<span class="req">*</span></label>
       <span class="full">
@@ -154,7 +175,7 @@
     </div>
   </div>
 
-  <div>
+  <div class="fields">
     <label>Address</label>
     <span class="full">
       <input class="text"></input>
@@ -194,7 +215,7 @@
     </span>
   </div>
 
-  <div>
+  <div class="fields">
     <label>Date</label>
     <span>
       <input size="2" class="text"></input> /
@@ -211,7 +232,7 @@
     </span>
   </div>
 
-  <div>
+  <div class="fields">
     <label>Phone Number</label>
     <span>
       <input size="5" class="text"></input> -

@@ -3,10 +3,12 @@ form * { font-size: 100%; font-family: sans-serif; font-size: 12px; }
 form p.description { margin-left: 1em; margin-right: 1em; }
 
 /* Field Containers */
-form div { clear: both; padding: 1em 1em 0.5em 1em; overflow: hidden; margin: 0; }
-form div:hover,
-form div.active { background: #FFFFE0; }
-form div.error { background: #FFE0E0; }
+form .field,
+form .fields { clear: both; padding: 1em 1em 0.5em 1em; overflow: hidden; margin: 0; }
+form .field:hover,
+form .fields:hover { background: #FFFFE0; }
+form .field.error:hover,
+form .fields.error:hover { background: #FFF0E0; }
 
 /* Columns */
 form .half_left,
@@ -35,7 +37,16 @@ form ul.check_radio { margin: 0; padding: 0; }
 form ul.check_radio li { list-style: none; margin: 0; padding: 0; white-space: nowrap; }
 form ul.check_radio.inline li { display: inline; margin: 0 1em 0 0; }
 form ul.check_radio label { display: inline; font-weight: normal; }
-form ul.check_radio input { margin: 0 0.3em 0 0; vertical-align: baseline; }
+form ul.check_radio input { margin: 0.3em; }
+
+/* Form Errors */
+form .field.error,
+form .fields.error { background: #FFE0E0; }
+form .field.error label { color: #C00000; }
+form .field.error span label { color: #E07070; }
+form .field.error input.text,
+form .field.error textarea,
+form .field.error select { border-color: #993939 #BA5A5A #CD6D6D #BA5A5A; }
 
 /* Field Widths */
 form span.full input.text,
@@ -46,7 +57,7 @@ form select.full { width: 100%; }
 form input.large,
 form select.large { width: 75%; }
 form input.medium,
-form select.medium, { width: 50%; }
+form select.medium { width: 50%; }
 form input.small,
 form select.small { width: 25%; }
 
