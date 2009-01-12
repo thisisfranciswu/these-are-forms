@@ -29,7 +29,7 @@ form span.full { width: 100%; margin: 0; padding: 0 0 0.5em; }
 /* Fields */
 form input.text,
 form textarea,
-form select { background: #FFFFFF; border-width: 1px; border-style: solid; border-color: #727272 #B4B4B4 #DADADA #B4B4B4; }
+form select { background: #FFFFFF; border-width: 1px; border-style: solid; border-color: #727272 #B4B4B4 #DADADA #B4B4B4; -moz-border-radius: 2px; -webkit-border-radius: 2px; }
 form input.text { height: 16px; padding: 2px 0 0; overflow: hidden; }
 form textarea { padding: 2px 0; }
 form select { height: 20px; padding: 2px 0; }
