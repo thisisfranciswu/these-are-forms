@@ -18,10 +18,12 @@
     function show_error_fields() {
       $$('div.field').invoke('addClassName', 'error');
       $$('div.fields').invoke('addClassName', 'error');
+      $$('div.fields span').invoke('addClassName', 'error');
     }
     function hide_error_fields() {
       $$('div.field').invoke('removeClassName', 'error');
       $$('div.fields').invoke('removeClassName', 'error');
+      $$('div.fields span').invoke('removeClassName', 'error');
     }
   </script>
 </head>

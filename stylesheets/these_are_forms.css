@@ -42,11 +42,16 @@ form ul.check_radio input { margin: 0.3em; }
 /* Form Errors */
 form .field.error,
 form .fields.error { background: #FFE0E0; }
-form .field.error label { color: #C00000; }
-form .field.error span label { color: #E07070; }
+form .field.error label,
+form .fields.error>label { color: #C00000; }
+form .field.error span label,
+form .fields.error span.error label { color: #E07070; }
 form .field.error input.text,
 form .field.error textarea,
-form .field.error select { border-color: #993939 #BA5A5A #CD6D6D #BA5A5A; }
+form .field.error select,
+form .fields.error span.error input.text,
+form .fields.error span.error textarea,
+form .fields.error span.error select { border-color: #993939 #BA5A5A #CD6D6D #BA5A5A; }
 
 /* Field Widths */
 form span.full input.text,
