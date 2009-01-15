@@ -33,11 +33,11 @@ form select { background: #FFFFFF; border-width: 1px; border-style: solid; borde
 form input.text { height: 16px; padding: 2px 0 0; overflow: hidden; }
 form textarea { padding: 2px 0; }
 form select { height: 20px; padding: 2px 0; }
-form ul.check_radio { margin: 0; padding: 0; }
-form ul.check_radio li { list-style: none; margin: 0; padding: 0; white-space: nowrap; }
-form ul.check_radio.inline li { display: inline; margin: 0 1em 0 0; }
-form ul.check_radio label { display: inline; font-weight: normal; }
-form ul.check_radio input { margin: 0.3em; }
+form ul { margin: 0; padding: 0; }
+form ul li { list-style: none; margin: 0; padding: 0; white-space: nowrap; }
+form ul.inline li { display: inline; margin: 0 1em 0 0; }
+form ul label { display: inline; font-weight: normal; }
+form ul input { margin: 0.3em; }
 
 /* Form Errors */
 form .field.error,
