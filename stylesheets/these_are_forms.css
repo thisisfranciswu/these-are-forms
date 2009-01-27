@@ -3,12 +3,11 @@ form * { font-size: 100%; font-family: sans-serif; font-size: 12px; }
 form p.description { margin-left: 1em; margin-right: 1em; }
 
 /* Field Containers */
-form .field,
-form .fields { clear: both; padding: 1em 1em 0.5em 1em; overflow: hidden; margin: 0; }
-form .field:hover,
-form .fields:hover { background: #FFFFE0; }
-form .field.error:hover,
-form .fields.error:hover { background: #FFF0E0; }
+form ul { margin: 0; padding: 0; }
+form ul li { clear: both; padding: 1em 1em 0.5em 1em; overflow: hidden; margin: 0; list-style: none; }
+form ul li:hover,
+form ul li:hover { background: #FFFFE0; }
+form ul li.error:hover { background: #FFF0E0; }
 
 /* Columns */
 form .half_left,
@@ -33,25 +32,19 @@ form select { background: #FFFFFF; border-width: 1px; border-style: solid; borde
 form input.text { height: 16px; padding: 2px 0 0; overflow: hidden; }
 form textarea { padding: 2px 0; }
 form select { height: 20px; padding: 2px 0; }
-form ul { margin: 0; padding: 0; }
-form ul li { list-style: none; margin: 0; padding: 0; white-space: nowrap; }
-form ul.inline li { display: inline; margin: 0 1em 0 0; }
-form ul label { display: inline; font-weight: normal; }
-form ul input { margin: 0.3em; }
+form ul.checkbox_radio { margin: 0; padding: 0; }
+form ul.checkbox_radio li { list-style: none; margin: 0; padding: 0; white-space: nowrap; }
+form ul.checkbox_radio.inline li { display: inline; margin: 0 1em 0 0; }
+form ul.checkbox_radio label { display: inline; font-weight: normal; }
+form ul.checkbox_radio input { margin: 0.3em; }
 
 /* Form Errors */
-form .field.error,
-form .fields.error { background: #FFE0E0; }
-form .field.error label,
-form .fields.error>label { color: #C00000; }
-form .field.error span label,
-form .fields.error span.error label { color: #E07070; }
-form .field.error input.text,
-form .field.error textarea,
-form .field.error select,
-form .fields.error span.error input.text,
-form .fields.error span.error textarea,
-form .fields.error span.error select { border-color: #993939 #BA5A5A #CD6D6D #BA5A5A; }
+form ul li.error { background: #FFE0E0; }
+form ul li.error label { color: #C00000; }
+form ul li.error span label { color: #E07070; }
+form ul li.error input.text,
+form ul li.error textarea,
+form ul li.error select { border-color: #993939 #BA5A5A #CD6D6D #BA5A5A; }
 
 /* Field Widths */
 form span.full input.text,

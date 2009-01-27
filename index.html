@@ -16,14 +16,10 @@
       $$('form').invoke('addClassName', font_size);
     }
     function show_error_fields() {
-      $$('div.field').invoke('addClassName', 'error');
-      $$('div.fields').invoke('addClassName', 'error');
-      $$('div.fields span').invoke('addClassName', 'error');
+      $$('form>ul>li').invoke('addClassName', 'error');
     }
     function hide_error_fields() {
-      $$('div.field').invoke('removeClassName', 'error');
-      $$('div.fields').invoke('removeClassName', 'error');
-      $$('div.fields span').invoke('removeClassName', 'error');
+      $$('form>ul>li').invoke('removeClassName', 'error');
     }
   </script>
 </head>
@@ -41,227 +37,218 @@
 
   <p class="description">This is a description.</p>
 
-  <div class="field">
-    <label>Single Line Text<span class="req">*</span></label>
-    <span class="full">
-      <input class="text"></input>
-      <label>Field Label</label>
-    </span>
-  </div>
+  <ul>
 
-  <div class="field">
-    <label>Paragraph Text</label>
-    <span class="full">
-      <textarea></textarea>
-      <label>Field Label</label>
-    </span>
-  </div>
+    <li>
+      <label>Single Line Text<span class="req">*</span></label>
+      <span class="full">
+        <input class="text"></input>
+        <label>Field Label</label>
+      </span>
+    </li>
 
-  <div class="field half_left">
-    <div class="half_container">
-      <label>Multiple Choice</label>
-      <ul>
+    <li>
+      <label>Paragraph Text</label>
+      <span class="full">
+        <textarea></textarea>
+        <label>Field Label</label>
+      </span>
+    </li>
+
+    <li class="half_left">
+      <div class="half_container">
+        <label>Multiple Choice</label>
+        <ul class="checkbox_radio">
+          <li><input type="radio"></input><label>First Choice</label></li>
+          <li><input type="radio"></input><label>Second Choice</label></li>
+          <li><input type="radio"></input><label>Third Choice</label></li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="half_right">
+      <div class="half_container">
+        <label>Checkboxes</label>
+        <ul class="checkbox_radio">
+          <li><input type="checkbox"></input><label>First Choice</label></li>
+          <li><input type="checkbox"></input><label>Second Choice</label></li>
+          <li><input type="checkbox"></input><label>Third Choice</label></li>
+        </ul>
+      </div>
+    </li>
+
+    <li>
+      <label>Multiple Choice (Inline)</label>
+      <ul class="checkbox_radio inline">
         <li><input type="radio"></input><label>First Choice</label></li>
         <li><input type="radio"></input><label>Second Choice</label></li>
         <li><input type="radio"></input><label>Third Choice</label></li>
       </ul>
-    </div>
-  </div>
+    </li>
 
-  <div class="field half_right">
-    <div class="half_container">
-      <label>Checkboxes</label>
-      <ul>
+    <li>
+      <label>Checkboxes (Inline)</label>
+      <ul class="checkbox_radio inline">
         <li><input type="checkbox"></input><label>First Choice</label></li>
         <li><input type="checkbox"></input><label>Second Choice</label></li>
         <li><input type="checkbox"></input><label>Third Choice</label></li>
       </ul>
-    </div>
-  </div>
+    </li>
 
-  <div class="field">
-    <label>Multiple Choice (Inline)</label>
-    <ul class="inline">
-      <li><input type="radio"></input><label>First Choice</label></li>
-      <li><input type="radio"></input><label>Second Choice</label></li>
-      <li><input type="radio"></input><label>Third Choice</label></li>
-    </ul>
-  </div>
-
-  <div class="field">
-    <label>Checkboxes (Inline)</label>
-    <ul class="inline">
-      <li><input type="checkbox"></input><label>First Choice</label></li>
-      <li><input type="checkbox"></input><label>Second Choice</label></li>
-      <li><input type="checkbox"></input><label>Third Choice</label></li>
-    </ul>
-  </div>
-
-  <div class="field">
-    <label>Drop Down</label>
-    <span class="full">
-      <select>
-        <option>First Choice</option>
-        <option>Second Choice</option>
-        <option>Third Choice</option>
-      </select>
-      <label>Field Label</label>
-    </span>
-  </div>
-
-  <div class="fields">
-    <label>Name</label>
-    <span>
-      <input class="text"></input>
-      <label>First</label>
-    </span>
-    <span>
-      <input class="text"></input>
-      <label>Last</label>
-    </span>
-  </div>
-
-  <div class="fields">
-    <label>Price</label>
-    <span>
-      $
-      <input class="text"></input> .
-      <label>Dollars</label>
-    </span>
-    <span>
-      <input size="2" class="text"></input>
-      <label>Cents</label>
-    </span>
-  </div>
-
-  <div class="fields">
-    <label>Time</label>
-    <span>
-      <input size="2" class="text"></input> :
-      <label>HH</label>
-    </span>
-    <span>
-      <input size="2" class="text"></input> :
-      <label>MM</label>
-    </span>
-    <span>
-      <input size="2" class="text"></input>
-      <label>SS</label>
-    </span>
-    <span>
-      <select>
-        <option>AM</option>
-        <option>PM</option>
-      </select>
-      <label>AM/PM</label>
-    </span>
-  </div>
-
-  <div class="field half_left">
-    <div class="half_container">
-      <label>Half Left<span class="req">*</span></label>
+    <li>
+      <label>Drop Down</label>
       <span class="full">
-        <input class="text"></input>
-        <label>Field Label</label>
-      </span>
-    </div>
-  </div>
-
-  <div class="field half_right">
-    <div class="half_container">
-      <label>Half Right<span class="req">*</span></label>
-      <span class="full">
-        <input class="text"></input>
-        <label>Field Label</label>
-      </span>
-    </div>
-  </div>
-
-  <div class="fields">
-    <label>Address</label>
-    <span class="full">
-      <input class="text"></input>
-      <label>Street Address</label>
-    </span>
-    <span class="full">
-      <input class="text"></input>
-      <label>Address Line 2</label>
-    </span>
-    <span class="half_left">
-      <div class="half_container">
-        <input class="text full"></input>
-        <label>City</label>
-      </div>
-    </span>
-    <span class="half_right">
-      <div class="half_container">
-        <input class="text full"></input>
-        <label>State / Province / Region</label>
-      </div>
-    </span>
-    <span class="half_left">
-      <div class="half_container">
-        <input class="text full"></input>
-        <label>Zip / Postal Code</label>
-      </div>
-    </span>
-    <span class="half_right">
-      <div class="half_container">
-        <select class="full">
+        <select>
           <option>First Choice</option>
           <option>Second Choice</option>
           <option>Third Choice</option>
         </select>
-        <label>Country</label>
+        <label>Field Label</label>
+      </span>
+    </li>
+
+    <li>
+      <label>Name</label>
+      <span>
+        <input class="text"></input>
+        <label>First</label>
+      </span>
+      <span>
+        <input class="text"></input>
+        <label>Last</label>
+      </span>
+    </li>
+
+    <li>
+      <label>Price</label>
+      <span>
+        $
+        <input class="text"></input> .
+        <label>Dollars</label>
+      </span>
+      <span>
+        <input size="2" class="text"></input>
+        <label>Cents</label>
+      </span>
+    </li>
+
+    <li>
+      <label>Time</label>
+      <span>
+        <input size="2" class="text"></input> :
+        <label>HH</label>
+      </span>
+      <span>
+        <input size="2" class="text"></input> :
+        <label>MM</label>
+      </span>
+      <span>
+        <input size="2" class="text"></input>
+        <label>SS</label>
+      </span>
+      <span>
+        <select>
+          <option>AM</option>
+          <option>PM</option>
+        </select>
+        <label>AM/PM</label>
+      </span>
+    </li>
+
+    <li class="half_left">
+      <div class="half_container">
+        <label>Half Left<span class="req">*</span></label>
+        <span class="full">
+          <input class="text"></input>
+          <label>Field Label</label>
+        </span>
       </div>
-    </span>
-  </div>
+    </li>
 
-  <div class="fields">
-    <label>Date</label>
-    <span>
-      <input size="2" class="text"></input> /
-      <label>MM</label>
-    </span>
-    <span>
-      <input size="2" class="text"></input> /
-      <label>DD</label>
-    </span>
-    <span>
-      <input size="4" class="text"></input>
-      <a href="">Select</a>
-      <label>YYYY</label>
-    </span>
-  </div>
+    <li class="half_right">
+      <div class="half_container">
+        <label>Half Right<span class="req">*</span></label>
+        <span class="full">
+          <input class="text"></input>
+          <label>Field Label</label>
+        </span>
+      </div>
+    </li>
 
-  <div class="fields">
-    <label>Phone Number</label>
-    <span>
-      <input size="5" class="text"></input> -
-      <label>(###)</label>
-    </span>
-    <span>
-      <input size="3" class="text"></input> -
-      <label>###</label>
-    </span>
-    <span>
-      <input size="4" class="text"></input>
-      <label>####</label>
-    </span>
-  </div>
+    <li>
+      <label>Address</label>
+      <span class="full">
+        <input class="text"></input>
+        <label>Street Address</label>
+      </span>
+      <span class="full">
+        <input class="text"></input>
+        <label>Address Line 2</label>
+      </span>
+      <span class="half_left">
+        <div class="half_container">
+          <input class="text full"></input>
+          <label>City</label>
+        </div>
+      </span>
+      <span class="half_right">
+        <div class="half_container">
+          <input class="text full"></input>
+          <label>State / Province / Region</label>
+        </div>
+      </span>
+      <span class="half_left">
+        <div class="half_container">
+          <input class="text full"></input>
+          <label>Zip / Postal Code</label>
+        </div>
+      </span>
+      <span class="half_right">
+        <div class="half_container">
+          <select class="full">
+            <option>First Choice</option>
+            <option>Second Choice</option>
+            <option>Third Choice</option>
+          </select>
+          <label>Country</label>
+        </div>
+      </span>
+    </li>
 
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
+    <li>
+      <label>Date</label>
+      <span>
+        <input size="2" class="text"></input> /
+        <label>MM</label>
+      </span>
+      <span>
+        <input size="2" class="text"></input> /
+        <label>DD</label>
+      </span>
+      <span>
+        <input size="4" class="text"></input>
+        <a href="">Select</a>
+        <label>YYYY</label>
+      </span>
+    </li>
+
+    <li>
+      <label>Phone Number</label>
+      <span>
+        <input size="5" class="text"></input> -
+        <label>(###)</label>
+      </span>
+      <span>
+        <input size="3" class="text"></input> -
+        <label>###</label>
+      </span>
+      <span>
+        <input size="4" class="text"></input>
+        <label>####</label>
+      </span>
+    </li>
+
+  </ul>
 
 </form>
 
