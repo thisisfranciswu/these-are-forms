@@ -21,7 +21,7 @@ form span.half_right div.half_container { padding: 0 0 0.5em 1em; }
 /* Labels and Inlining */
 form label { line-height: 1; font-weight: bold; display: block; color: #000000; margin: 0 0 0.5em; white-space: nowrap; }
 form label span.req { color: #C00000; float: none; margin: 0 0 0 0.5em; line-height: 1; display: inline; padding: 0; }
-form span label { font-size: 84%; color: #404040; font-weight: normal; margin: 0.3em 0 0 0; }
+form span label { font-size: 85%; color: #404040; font-weight: normal; margin: 0.3em 0 0 0; }
 form span { float: left; margin: 0; padding: 0 0.4em 0.5em 0; display: block; }
 form span.full { width: 100%; margin: 0; padding: 0 0 0.5em; }
 
@@ -59,17 +59,24 @@ form select.medium { width: 50%; }
 form input.small,
 form select.small { width: 25%; }
 
+/* Fieldsets */
+form fieldset { border: 1px solid #E0E0E0; padding: 0; margin: 0; }
+form legend { font-weight: bold; margin: 0 0.5em; padding: 0 0.5em; color: #808080; font-size: 125%; }
+
 /* Optional Field Sizes */
 form.large { width: 650px; }
 form.large * { font-size: 18px; }
 form.large input.text { height: 22px; padding: 4px 0 0; }
 form.large textarea { padding: 3px 0 0; }
 form.large select { height: 28px; padding: 4px 0; }
+form.large legend { font-size: 20px; }
 form.xlarge { width: 800px; }
 form.xlarge * { font-size: 24px; }
 form.xlarge input.text { height: 30px; padding: 6px 0 0; }
 form.xlarge textarea { padding: 4px 0 0; }
 form.xlarge select { height: 38px; padding: 6px 0; }
+form.xlarge legend { font-size: 26px; }
 form.large span label,
 form.xlarge span label { font-size: 85%; }
-
+form.large legend,
+form.xlarge legend { font-size: 125%; }
