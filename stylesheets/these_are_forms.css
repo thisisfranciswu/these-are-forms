@@ -32,11 +32,11 @@ form select { background: #FFFFFF; border-width: 1px; border-style: solid; borde
 form input.text { height: 16px; padding: 2px 0 0; overflow: hidden; }
 form textarea { padding: 2px 0; }
 form select { height: 20px; padding: 2px 0; }
-form ul.checkbox_radio { margin: 0; padding: 0; }
-form ul.checkbox_radio li { list-style: none; margin: 0; padding: 0; white-space: nowrap; }
-form ul.checkbox_radio.inline li { display: inline; margin: 0 1em 0 0; }
-form ul.checkbox_radio label { display: inline; font-weight: normal; }
-form ul.checkbox_radio input { margin: 0.3em; }
+form ul.choices { margin: 0; padding: 0; }
+form ul.choices li { list-style: none; margin: 0; padding: 0; white-space: nowrap; }
+form ul.choices.inline li { display: inline; margin: 0 1em 0 0; }
+form ul.choices label { display: inline; font-weight: normal; }
+form ul.choices input { margin: 0.3em; }
 
 /* Form Errors */
 form ul li.error { background: #FFE0E0; }
