@@ -4,7 +4,7 @@ form p.description { margin-left: 1em; margin-right: 1em; }
 
 /* Field Containers */
 form ul { margin: 0; padding: 0; }
-form ul li { clear: both; padding: 1em 1em 0.5em 1em; overflow: hidden; margin: 0; list-style: none; }
+form ul li { clear: both; padding: 1em; overflow: hidden; margin: 0; list-style: none; }
 form ul li:hover,
 form ul li:hover { background: #FFFFE0; }
 form ul li.error:hover { background: #FFF0E0; }
