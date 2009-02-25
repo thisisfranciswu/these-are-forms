@@ -1,13 +1,16 @@
 form { width: 500px; }
 form * { font-size: 100%; font-family: sans-serif; font-size: 12px; }
 form p.description { margin-left: 1em; margin-right: 1em; }
+form a.cancel { color: #FF0000; }
 
-/* Field Containers */
+/* Field Containers and Padding */
 form ul { margin: 0; padding: 0; }
 form ul li { clear: both; padding: 1em; overflow: hidden; margin: 0; list-style: none; }
-form ul li:hover,
 form ul li:hover { background: #FFFFE0; }
 form ul li.error:hover { background: #FFF0E0; }
+form.no_hover ul li:hover { background: none; }
+form.no_hover ul li.error:hover { background: #FFE0E0; }
+form.no_padding li { padding: 0 0 1em; }
 
 /* Columns */
 form .half_left,
@@ -17,26 +20,33 @@ form .half_right { clear: none; float: right; }
 form div.half_container { padding: 0 1em; overflow: visible; }
 form span.half_left div.half_container { padding: 0 1em 0.5em 0;  }
 form span.half_right div.half_container { padding: 0 0 0.5em 1em; }
+form span.half_left.last,
+form span.half_left.last div.half_container,
+form span.half_right.last,
+form span.half_right.last div.half_container,
+form span.full.last { padding-bottom: 0; }
 
 /* Labels and Inlining */
 form label { line-height: 1; font-weight: bold; display: block; color: #000000; margin: 0 0 0.5em; white-space: nowrap; }
 form label span.req { color: #C00000; float: none; margin: 0 0 0 0.5em; line-height: 1; display: inline; padding: 0; }
-form span label { font-size: 85%; color: #404040; font-weight: normal; margin: 0.3em 0 0 0; }
+form span label { font-size: 85%; color: #404040; font-weight: normal; margin: 0.3em 0 0 0; display: block; }
+form span label.choice { font-size: 100%; color: #000000; white-space: nowrap; display: inline; margin: 0; }
 form span { float: left; margin: 0; padding: 0 0.4em 0.5em 0; display: block; }
 form span.full { width: 100%; margin: 0; padding: 0 0 0.5em; }
 
 /* Fields */
 form input.text,
 form textarea,
-form select { background: #FFFFFF; border-width: 1px; border-style: solid; border-color: #727272 #B4B4B4 #DADADA #B4B4B4; -moz-border-radius: 2px; -webkit-border-radius: 2px; }
+form select { background: #FFFFFF; border-width: 1px; border-style: solid; border-color: #727272 #B4B4B4 #DADADA #B4B4B4; }
 form input.text { height: 16px; padding: 2px 0 0; overflow: hidden; }
+form input.choice { margin-right: 0; }
 form textarea { padding: 2px 0; }
 form select { height: 20px; padding: 2px 0; }
 form ul.choices { margin: 0; padding: 0; }
 form ul.choices li { list-style: none; margin: 0; padding: 0; white-space: nowrap; }
 form ul.choices.inline li { display: inline; margin: 0 1em 0 0; }
 form ul.choices label { display: inline; font-weight: normal; }
-form ul.choices input { margin: 0.3em; }
+form ul.choices input { margin: 0; }
 
 /* Form Errors */
 form ul li.error { background: #FFE0E0; }
@@ -61,7 +71,7 @@ form select.small { width: 25%; }
 
 /* Fieldsets */
 form fieldset { border: 1px solid #E0E0E0; padding: 0; margin: 0; }
-form legend { font-weight: bold; margin: 0 0.5em; padding: 0 0.5em; color: #808080; font-size: 125%; }
+form legend { font-weight: bold; margin: 0 0.5em; padding: 0 0.5em; color: #404040; font-size: 125%; }
 
 /* Optional Field Sizes */
 form.large { width: 650px; }
