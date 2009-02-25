@@ -6,10 +6,14 @@ form a.cancel { color: #FF0000; }
 /* Field Containers and Padding */
 form ul { margin: 0; padding: 0; }
 form ul li { clear: both; padding: 1em; overflow: hidden; margin: 0; list-style: none; }
-form ul li:hover { background: #FFFFE0; }
-form ul li.error:hover { background: #FFF0E0; }
-form.no_hover ul li:hover { background: none; }
-form.no_hover ul li.error:hover { background: #FFE0E0; }
+form ul li:hover,
+form ul li:focus { background: #FFFFE0; }
+form ul li.error:hover,
+form ul li.error:focus { background: #FFF0E0; }
+form.no_hover ul li:hover,
+form.no_hover ul li:focus { background: none; }
+form.no_hover ul li.error:hover,
+form.no_hover ul li.error:focus { background: #FFE0E0; }
 form.no_padding li { padding: 0 0 1em; }
 
 /* Columns */
