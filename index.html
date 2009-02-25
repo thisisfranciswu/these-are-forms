@@ -3,35 +3,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>These Are Forms</title>
+  <title>These Are Forms Demo</title>
   <link href="stylesheets/these_are_forms.css" rel="stylesheet" type="text/css" media="screen"></link>
   <!--[if IE]>
     <link href="stylesheets/these_are_forms_ie.css" rel="stylesheet" type="text/css" media="screen"></link>
   <![endif]-->
-  <script type="text/javascript" src="javascript/prototype.js"></script>
-  <script>
-    function set_font_size(font_size) {
-      $$('form').invoke('removeClassName', 'large');
-      $$('form').invoke('removeClassName', 'xlarge');
-      $$('form').invoke('addClassName', font_size);
-    }
-    function show_error_fields() {
-      $$('form>ul>li').invoke('addClassName', 'error');
-    }
-    function hide_error_fields() {
-      $$('form>ul>li').invoke('removeClassName', 'error');
-    }
-  </script>
 </head>
 
 <body>
 
-<h1>These Are Forms</h1>
-
-<p>
-  Font Size: <a href="#" onclick="set_font_size('');">Regular</a> | <a href="#" onclick="set_font_size('large');">Large</a> | <a href="#" onclick="set_font_size('xlarge');">Extra Large</a><br/>
-  Error Fields: <a href="#" onclick="show_error_fields();">On</a> | <a href="#" onclick="hide_error_fields();">Off</a>
-</p>
+<h1>These Are Forms Demo</h1>
 
 <form>
 
