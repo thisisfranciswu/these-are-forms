@@ -1,7 +1,5 @@
-This is a simple HTML/CSS forms framework inspired by Wufoo.
+This is a comprehensive HTML/CSS forms framework inspired by Wufoo.
 
 Todo:
- - Test for browser compatibility
  - Tooltip
  - Buttons
- - Fieldsets
