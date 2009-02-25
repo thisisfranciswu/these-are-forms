@@ -14,95 +14,158 @@
 
 <h1>These Are Forms Demo</h1>
 
-<form>
-
-  <p class="description">This is a description.</p>
-
-  <fieldset>
-
-    <legend>Fieldset</legend>
-
-    <ul>
-
-      <li>
-        <label>Address</label>
-        <span class="full">
-          <input class="text"></input>
-          <label>Street Address</label>
-        </span>
-        <span class="full">
-          <input class="text"></input>
-          <label>Address Line 2</label>
-        </span>
-        <span class="half_left">
-          <div class="half_container">
-            <input class="text full"></input>
-            <label>City</label>
-          </div>
-        </span>
-        <span class="half_right">
-          <div class="half_container">
-            <input class="text full"></input>
-            <label>State / Province / Region</label>
-          </div>
-        </span>
-        <span class="half_left">
-          <div class="half_container">
-            <input class="text full"></input>
-            <label>Zip / Postal Code</label>
-          </div>
-        </span>
-        <span class="half_right">
-          <div class="half_container">
-            <select class="full">
-              <option>First Choice</option>
-              <option>Second Choice</option>
-              <option>Third Choice</option>
-            </select>
-            <label>Country</label>
-          </div>
-        </span>
-      </li>
-
-      <li>
-        <label>Date</label>
-        <span>
-          <input size="2" class="text"></input> /
-          <label>MM</label>
-        </span>
-        <span>
-          <input size="2" class="text"></input> /
-          <label>DD</label>
-        </span>
-        <span>
-          <input size="4" class="text"></input>
-          <a href="">Select</a>
-          <label>YYYY</label>
-        </span>
-      </li>
-
-    </ul>
-
-  </fieldset>
-
+<p>
+  The form below features:
   <ul>
+    <li>Wufoo-styled columns.</li>
+    <li>Field highlighting on hover.</li>
+    <li>Field widths at 100%.</li>
+    <li>Descriptive labels.</li>
+  </ul>
+</p>
 
+<form>
+  <ul>
     <li>
-      <label>Single Line Text<span class="req">*</span></label>
+      <label>Address</label>
       <span class="full">
         <input class="text"></input>
-        <label>Field Label</label>
+        <label>Street Address</label>
       </span>
-    </li>
-
-    <li>
-      <label>Paragraph Text</label>
       <span class="full">
-        <textarea></textarea>
-        <label>Field Label</label>
+        <input class="text"></input>
+        <label>Address Line 2</label>
+      </span>
+      <span class="half_left">
+        <div class="half_container">
+          <input class="text full"></input>
+          <label>City</label>
+        </div>
+      </span>
+      <span class="half_right">
+        <div class="half_container">
+          <input class="text full"></input>
+          <label>State / Province / Region</label>
+        </div>
+      </span>
+      <span class="half_left last">
+        <div class="half_container">
+          <input class="text full"></input>
+          <label>Zip / Postal Code</label>
+        </div>
+      </span>
+      <span class="half_right last">
+        <div class="half_container">
+          <select class="full">
+            <option>First Choice</option>
+            <option>Second Choice</option>
+            <option>Third Choice</option>
+          </select>
+          <label>Country</label>
+        </div>
       </span>
     </li>
+    <li>
+      <button>Submit</button>
+    </li>
+  </ul>
+</form>
 
+<hr/>
+
+<p>
+  The form below features:
+  <ul>
+    <li>Large form</li>
+    <li>Field highlighting on hover.</li>
+    <li>Inline fields and text</li>
+    <li>Descriptive labels.</li>
+  </ul>
+</p>
+
+<form class="no_hover large">
+  <ul>
+    <li>
+      <label>Date</label>
+      <span>
+        <input size="2" class="text"></input> /
+        <label>MM</label>
+      </span>
+      <span>
+        <input size="2" class="text"></input> /
+        <label>DD</label>
+      </span>
+      <span>
+        <input size="4" class="text"></input>
+        <a href="">Select</a>
+        <label>YYYY</label>
+      </span>
+    </li>
+    <li>
+      <button>Submit</button>
+    </li>
+  </ul>
+</form>
+
+<hr/>
+
+<p>
+  The form below features:
+  <ul>
+    <li>Field highlighting on hover.</li>
+    <li>Inline fields.</li>
+    <li>Descriptive labels.</li>
+    <li>Custom field widths.</li>
+  </ul>
+</p>
+
+<form>
+  <ul>
+    <li>
+      <label>Single Line Text<span class="req">*</span></label>
+      <span class="full last">
+        <input class="text large"></input>
+        <label>Descriptive Label</label>
+      </span>
+    </li>
+    <li class="error">
+      <label>Paragraph Text</label>
+      <span class="full last">
+        <textarea class="full"></textarea>
+        <label>Descriptive Label</label>
+      </span>
+    </li>
+    <li>
+      <label>Drop Down</label>
+      <span class="full last">
+        <select class="medium">
+          <option>First Choice</option>
+          <option>Second Choice</option>
+          <option>Third Choice</option>
+        </select>
+        <label>Descriptive Label</label>
+      </span>
+    </li>
+    <li>
+      <button>Submit</button>
+    </li>
+  </ul>
+</form>
+
+<hr/>
+
+<p>
+  The form below features:
+  <ul>
+    <li>Field highlighting on hover.</li>
+    <li>Both inline and block-style choice fields.</li>
+    <li>Wufoo-styled columns.</li>
+    <li>Error styling.</li>
+  </ul>
+</p>
+
+<form>
+  <ul>
     <li class="half_left">
       <div class="half_container">
         <label>Multiple Choice</label>
@@ -113,18 +176,16 @@
         </ul>
       </div>
     </li>
-
-    <li class="half_right">
+    <li class="half_right error">
       <div class="half_container">
         <label>Checkboxes</label>
         <ul class="choices">
-          <li><input type="checkbox"/> <label>First Choice</label></li>
+          <li><input type="checkbox"/> <label>First Choice</label></label></li>
           <li><input type="checkbox"/> <label>Second Choice</label></li>
           <li><input type="checkbox"/> <label>Third Choice</label></li>
         </ul>
       </div>
     </li>
-
     <li>
       <label>Multiple Choice (Inline)</label>
       <ul class="choices inline">
@@ -133,7 +194,6 @@
         <li><input type="radio"/> <label>Third Choice</label></li>
       </ul>
     </li>
-
     <li>
       <label>Checkboxes (Inline)</label>
       <ul class="choices inline">
@@ -142,22 +202,62 @@
         <li><input type="checkbox"/> <label>Third Choice</label></li>
       </ul>
     </li>
-
     <li>
-      <label>Drop Down</label>
-      <span class="full">
-        <select>
-          <option>First Choice</option>
-          <option>Second Choice</option>
-          <option>Third Choice</option>
-        </select>
-        <label>Field Label</label>
-      </span>
+      <button>Submit</button>
     </li>
+  </ul>
+</form>
 
+<hr/>
+
+<p>
+  The below features:
+  <ul>
+    <li>Large form</li>
+    <li>No field highlighting on hover.</li>
+    <li>No field padding</li>
+    <li>Inline fields.</li>
+    <li>Mandatory field marker.</li>
+  </ul>
+</p>
+
+<form class="no_hover no_padding large">
+  <ul>
     <li>
-      <label>Name</label>
-      <span>
+      <label>Username<span class="req">*</span></label>
+      <input class="text"/>
+    </li>
+    <li>
+      <label>Password<span class="req">*</span></label>
+      <input type="password" class="text"/>
+    </li>
+    <li>
+      <button>Login</button>
+    </li>
+  </ul>
+</form>
+
+
+
+<hr/>
+
+<p>
+  The form below features:
+  <ul>
+    <li>Extra-large form.</li>
+    <li>Field highlighting on hover.</li>
+    <li>Inline fields.</li>
+    <li>Error styling.</li>
+    <li>Descriptive labels.</li>
+    <li>Mandatory field marker.</li>
+  </ul>
+</p>
+
+<form class="xlarge">
+  <ul>
+    <li>
+      <label>Name<span class="req">*</span></label>
+      <span class="error">
         <input class="text"></input>
         <label>First</label>
       </span>
@@ -166,11 +266,31 @@
         <label>Last</label>
       </span>
     </li>
+    <li>
+      <button>Submit</button>
+    </li>
+  </ul>
+</form>
 
+<hr/>
+
+<p>
+  The below features:
+  <ul>
+    <li>Large form.</li>
+    <li>Field highlighting on hover.</li>
+    <li>Inline fields and text.</li>
+    <li>Error styling.</li>
+    <li>Descriptive labels.</li>
+  </ul>
+</p>
+
+<form class="large">
+  <ul>
     <li>
       <label>Price</label>
+      <span>$</span>
       <span>
-        $
         <input class="text"></input> .
         <label>Dollars</label>
       </span>
@@ -179,14 +299,13 @@
         <label>Cents</label>
       </span>
     </li>
-
     <li>
       <label>Time</label>
       <span>
         <input size="2" class="text"></input> :
         <label>HH</label>
       </span>
-      <span>
+      <span class="error">
         <input size="2" class="text"></input> :
         <label>MM</label>
       </span>
@@ -202,28 +321,7 @@
         <label>AM/PM</label>
       </span>
     </li>
-
-    <li class="half_left">
-      <div class="half_container">
-        <label>Half Left<span class="req">*</span></label>
-        <span class="full">
-          <input class="text"></input>
-          <label>Field Label</label>
-        </span>
-      </div>
-    </li>
-
-    <li class="half_right">
-      <div class="half_container">
-        <label>Half Right<span class="req">*</span></label>
-        <span class="full">
-          <input class="text"></input>
-          <label>Field Label</label>
-        </span>
-      </div>
-    </li>
-
-    <li>
+    <li class="error">
       <label>Phone Number</label>
       <span>
         <input size="5" class="text"></input> -
@@ -238,12 +336,55 @@
         <label>####</label>
       </span>
       <span class="choices">
-        <input type="checkbox" class="choice"/> <label class="choice">Third Choice</label>
+        <input type="checkbox" class="choice"/> <label class="choice">Long Distance</label>
       </span>
     </li>
-
+    <li>
+      <button>Submit</button>
+    </li>
   </ul>
+</form>
 
+<hr/>
+
+<p>
+  The below features:
+  <ul>
+    <li>A field set.</li>
+    <li>No field highlighting on hover.</li>
+    <li>Inline fields and text.</li>
+    <li>Descriptive labels.</li>
+    <li>Mandatory field marker</li>
+  </ul>
+</p>
+
+<form class="no_hover">
+  <fieldset>
+    <legend>Fieldset</legend>
+    <ul>
+      <li class="half_left">
+        <div class="half_container">
+          <label>Half Left<span class="req">*</span></label>
+          <span class="full last">
+            <input class="text full"></input>
+            <label>Field Label</label>
+          </span>
+        </div>
+      </li>
+      <li class="half_right">
+        <div class="half_container">
+          <label>Half Right<span class="req">*</span></label>
+          <span class="full last">
+            <input class="text full"></input>
+            <label>Field Label</label>
+          </span>
+        </div>
+      </li>
+      <li>
+        <button>Submit</button>
+      </li>
+    </ul>
+  </fieldset>
 </form>
 
 </body>

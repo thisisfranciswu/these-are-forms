@@ -7,7 +7,7 @@ form a.cancel { color: #FF0000; }
 form ul { margin: 0; padding: 0; }
 form ul li { clear: both; padding: 1em; overflow: hidden; margin: 0; list-style: none; }
 form ul li:hover { background: #FFFFE0; }
-form ul li.error:hover { background: #FFF0E0; }
+form ul li.error:hover { background: #FFE0E0; }
 form.no_hover ul li:hover { background: none; }
 form.no_hover ul li.error:hover { background: #FFE0E0; }
 form.no_padding li { padding: 0 0 1em; }
@@ -31,7 +31,7 @@ form label { line-height: 1; font-weight: bold; display: block; color: #000000; 
 form label span.req { color: #C00000; float: none; margin: 0 0 0 0.5em; line-height: 1; display: inline; padding: 0; }
 form span label { font-size: 85%; color: #404040; font-weight: normal; margin: 0.3em 0 0 0; display: block; }
 form span label.choice { font-size: 100%; color: #000000; white-space: nowrap; display: inline; margin: 0; }
-form span { float: left; margin: 0; padding: 0 0.4em 0.5em 0; display: block; }
+form span { line-height: 20px; float: left; margin: 0; padding: 0 0.4em 0 0; display: block; }
 form span.full { width: 100%; margin: 0; padding: 0 0 0.5em; }
 
 /* Fields */
@@ -50,23 +50,25 @@ form ul.choices input { margin: 0; }
 
 /* Form Errors */
 form ul li.error { background: #FFE0E0; }
-form ul li.error label { color: #C00000; }
-form ul li.error span label { color: #E07070; }
-form ul li.error input.text,
-form ul li.error textarea,
-form ul li.error select { border-color: #993939 #BA5A5A #CD6D6D #BA5A5A; }
+form ul .error label,
+form ul .error label.choice { color: #C00000; }
+form ul .error span label { color: #E07070; }
+form ul .error input.text,
+form ul .error textarea,
+form ul .error select { border-color: #993939 #BA5A5A #CD6D6D #BA5A5A; background: #FFF7F7; }
 
 /* Field Widths */
-form span.full input.text,
-form span.full textarea,
-form span.full select { width: 100%; margin: 0; }
 form input.full,
-form select.full { width: 100%; }
+form textarea.full,
+form select.full { width: 100%; margin: 0; }
 form input.large,
+form textarea.large,
 form select.large { width: 75%; }
 form input.medium,
+form textarea.medium,
 form select.medium { width: 50%; }
 form input.small,
+form textarea.small,
 form select.small { width: 25%; }
 
 /* Fieldsets */
@@ -76,12 +78,14 @@ form legend { font-weight: bold; margin: 0 0.5em; padding: 0 0.5em; color: #4040
 /* Optional Field Sizes */
 form.large { width: 650px; }
 form.large * { font-size: 18px; }
+form.large span { line-height: 28px; }
 form.large input.text { height: 22px; padding: 4px 0 0; }
 form.large textarea { padding: 3px 0 0; }
 form.large select { height: 28px; padding: 4px 0; }
 form.large legend { font-size: 20px; }
 form.xlarge { width: 800px; }
 form.xlarge * { font-size: 24px; }
+form.xlarge span { line-height: 38px; }
 form.xlarge input.text { height: 30px; padding: 6px 0 0; }
 form.xlarge textarea { padding: 4px 0 0; }
 form.xlarge select { height: 38px; padding: 6px 0; }
