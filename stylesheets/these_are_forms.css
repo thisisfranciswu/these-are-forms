@@ -44,6 +44,7 @@ form textarea { padding: 2px 0; }
 form select { height: 20px; padding: 2px 0; }
 form ul.choices { margin: 0; padding: 0; }
 form ul.choices li { list-style: none; margin: 0; padding: 0; white-space: nowrap; }
+form ul.choices li:hover { background: transparent; }
 form ul.choices.inline li { display: inline; margin: 0 1em 0 0; }
 form ul.choices label { display: inline; font-weight: normal; }
 form ul.choices input { margin: 0; }
